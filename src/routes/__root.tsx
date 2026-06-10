@@ -77,19 +77,33 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Ausbildung Bridge — Morocco to German Ausbildung" },
+      {
+        name: "description",
+        content:
+          "The fastest, safest path from Morocco to a paid German Ausbildung. Professional documents, expert 1:1 guidance, and visa support.",
+      },
+      { name: "author", content: "Ausbildung Bridge" },
+      { property: "og:title", content: "Ausbildung Bridge — Morocco to German Ausbildung" },
+      {
+        property: "og:description",
+        content:
+          "Professional documents, expert guidance, and personalized support to land a paid Ausbildung in Germany.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:site", content: "@AusbildungBridge" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
+      },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap",
       },
     ],
   }),
