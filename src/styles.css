@@ -143,11 +143,7 @@
 }
 
 @utility text-gradient-gold {
-  background: linear-gradient(135deg, oklch(0.95 0.1 98), var(--gold));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  color: var(--gold);
 }
 
 @layer base {
